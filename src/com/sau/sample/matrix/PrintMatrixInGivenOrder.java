@@ -20,13 +20,14 @@ public class PrintMatrixInGivenOrder {
 		System.out.println("Solution 1");
 		solution_1(matrix);	
 		System.out.println("\n\nSolution 2");
-		solution_2(matrix);		
+		solution_2(matrix);	
 		System.out.println("\n\nSolution 3");
 		solution_3(matrix);	
 		System.out.println("\n\nSolution 4");
 		solution_4(matrix);
 		System.out.println("\n\nSolution 5");
 		solution_5(matrix);
+
 	}
 	
 	public static void solution_1(int[][] matrix) {
@@ -128,7 +129,8 @@ public class PrintMatrixInGivenOrder {
 	} 
 	
 	
-	public static void solution_5(int[][] matrix) {
+
+	public static void solution_5(int[][] matrix) {	
 		
 		int matrixRowSize = matrix.length;
 		int matrixColumnSize = matrix.length == 0 ? 0 : matrix[0].length;
@@ -141,7 +143,6 @@ public class PrintMatrixInGivenOrder {
 			
 			int rowIndex = i / matrixColumnSize;
 			int columnIndex = i % (matrixColumnSize);
-			
 			int columnIndexToBeUsed  = Math.abs(rowIndex%2 * (matrixColumnSize -1) - columnIndex);			
 			
 			//System.out.println(i + " " + rowIndex + " " + columnIndex + " " + columnIndexToBeUsed);
@@ -152,5 +153,6 @@ public class PrintMatrixInGivenOrder {
 		}
 	} 
 	
+
 
 }
